@@ -1,13 +1,12 @@
 <?= load_partial('header') ?>
 <?= load_partial('navbar') ?>
-<?= load_partial('top-banner') ?>
 
 <section class="container mx-auto p-4 mt-4">
   <div class="rounded-lg shadow-md bg-white p-3">
     <div class="flex justify-between items-center">
       <a class="block p-4 text-blue-700" href="/listings">
         <i class="fa fa-arrow-alt-circle-left"></i>
-        Back To Listings
+        Back
       </a>
       <div class="flex space-x-4 ml-4">
         <?php
@@ -35,8 +34,6 @@
         <li class="mb-2"><strong>Salary:</strong> <?= format_salary($listing->salary) ?></li>
         <li class="mb-2">
           <strong>Location:</strong> <?= $listing->city ?>
-          <!-- <span
-            class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2">Local</span> -->
         </li>
         <li class="mb-2">
           <strong>Tags:</strong>
